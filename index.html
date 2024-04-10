@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Смешарики</title>
+    <style>
+        /* Стили для шапки */
+        header {
+            background-image: url('images/logo.png');
+            height: 250px;
+            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем шапку по горизонтали */
+        }
+
+        /* Стили для выпадающего меню */
+
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #357ecc;
+            padding: 20px;
+            align-items: center;
+            margin-top: 10px; /* добавьте нужный вам отступ сверху */
+            margin-bottom: 10px;
+        }
+
+            .menu a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                width: 150px; /* Увеличьте значение ширины по вашему выбору */
+                text-align: center;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+                .menu a:hover {
+                    background-color:;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
+                }
+
+        body {
+            background-image: url('images/fon.jpg');
+            background-size: auto;
+            background-repeat: repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем страницу по горизонтали */
+
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+        }
+
+        .content {
+            height: 2800px; /* Пример высоты контента */
+            max-width: 1200px;
+            overflow-y: hidden; /* Включаем вертикальный скролл для контента */
+            margin: 0 auto;
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+            background-color: white;
+        }
+
+        footer {
+            background-color: #2698db;
+            padding: 30px;
+        }
+
+            footer p {
+                color: white;
+                display: inline; /* располагает элементы в одну строку */
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+
+        .moving-image {
+            width: 100px;
+            position: absolute;
+            animation: mymove 40s infinite;
+            margin: 20px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            width: 200px;
+            height: 110px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -800px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-image1 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 30s infinite;
+            margin-top: 350px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-image2 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 650px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            width: 180px;
+            height: 130px;
+            left: -150px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagelate {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 200px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -230px;
+            animation-delay: 10s;
+            width: 200px;
+            height: 150px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagelate1 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 420px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -150px;
+            animation-delay: 7s;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagelate2 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 30s infinite;
+            margin-top: 400px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -150px;
+            animation-delay: 20s;
+            width: 150px;
+            height: 120px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagelate3 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 42s infinite;
+            margin-top: 500px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -170px;
+            animation-delay: 25s;
+            width: 170px;
+            height: 130px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown {
+            width: 100px;
+            position: absolute;
+            animation: mymove 40s infinite;
+            margin-top: 800px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            width: 200px;
+            height: 110px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -800px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown1 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 30s infinite;
+            margin-top: 920px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown2 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 1200px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            width: 180px;
+            height: 130px;
+            left: -150px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown3 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 1450px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -230px;
+            animation-delay: 10s;
+            width: 200px;
+            height: 150px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown4 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 50s infinite;
+            margin-top: 1600px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -150px;
+            animation-delay: 7s;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown5 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 30s infinite;
+            margin-top: 1800px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -150px;
+            animation-delay: 20s;
+            width: 150px;
+            height: 120px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .moving-imagedown6 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 42s infinite;
+            margin-top: 1950px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -170px;
+            animation-delay: 25s;
+            width: 170px;
+            height: 130px;
+        }
+
+        .moving-imagedown7 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 46s infinite;
+            margin-top: 2150px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -170px;
+            animation-delay: 1s;
+            width: 160px;
+            height: 120px;
+        }
+
+        .moving-imagedown8 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 40s infinite;
+            margin-top: 2300px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -170px;
+            animation-delay: 3s;
+            width: 170px;
+            height: 130px;
+        }
+
+        .moving-imagedown9 {
+            width: 100px;
+            position: absolute;
+            animation: mymove 33s infinite;
+            margin-top: 2400px;
+            z-index: -1;
+            animation-timing-function: ease-in-out;
+            left: -170px;
+            animation-delay: 2s;
+            width: 180px;
+            height: 135px;
+        }
+
+        @keyframes mymove {
+            0% {
+                left: -150px;
+            }
+
+            100% {
+                left: 1900px;
+            }
+        }
+
+        .gif {
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Kalam', cursive;
+        }
+
+        p {
+            font-family: 'Kalam', cursive;
+            font-size: 23px;
+            margin-left: 10px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
+    </div>
+
+    <img src="images/oblako.png" alt="Description of the image" class="moving-image">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-image1">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-image2">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagelate">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagelate1">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagelate2">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagelate3">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown1">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown2">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown3">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown4">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown5">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown6">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown7">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown8">
+    <img src="images/oblako.png" alt="Description of the image" class="moving-imagedown9">
+
+
+
+
+
+    <div class="content">
+        <h1 style="text-align: center;">Приветствуем вас в нашей сказочной Ромашковой долине, мире смешариков!</h1>
+        <p>
+
+            Смешарики — это забавные круглые зверьки с неповторимыми характерами и увлекательными историями.<br><br>
+            Здесь вы встретите:
+        </p><br>
+
+
+        <div style="display: flex; margin-left: 10px">
+            <img src="images/ezhik.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #dd4572;">Ёжика</a> — скромного и умного ежа. Он всегда готов прийти на помощь друзьям и поделиться своими знаниями.</p>
+        </div>
+
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/krosh.gif" alt="Описание гифки" class="gif" width="178" height="178">
+            <p style="margin-left: 20px;">
+                <a href="Characters.html" style="color: #9be4e4;">
+                    Кроша
+                </a> — неунывающего и озорного кролика. Он обожает устраивать веселые игры и развлечения для своих друзей.
+            </p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/nyusha.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #ff9195;">Нюшу</a> — очаровательную и романтичную свинку. Она всегда ищет красоту вокруг себя и старается делать мир ярче.</p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/barash.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #ffb3ec; ">Бараша</a> — меланхоличного и поэтичного барашка. Он часто углубляется в размышления и наблюдения за окружающим миром.</p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/losyash.gif" alt="Описание гифки" class="gif" width="195" height="195">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #eead36;">Лосяша</a> — эрудированного и добродушного лося. Его умение находить решения и анализировать ситуации помогает ему и его друзьям преодолевать препятствия.</p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/pin.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #020100;">Пина</a> — талантливого и немного вспыльчивого пингвина. Виртуоз в своих железных изобретениях. Пин — иностранец, поэтому и говорит он с заметным немецким акцентом.</p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/karkar.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #1d3fe5;">Кар-Карыча</a> — артистичного и рассудительного ворона. Карыч умело руководит совместной деятельностью, отвечает за организацию праздников и реализацию предприятий.</p>
+        </div>
+
+        <div style="display: flex; margin-top: 20px; margin-left: 10px">
+            <img src="images/kopatuch.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #e45a1e;">Копатыча</a> -  веселый и трудолюбивый медведь. Первая страсть Копатыча — его огород, которым он кормит всю долину Смешариков. Вторая страсть Копатыча — мед.</p>
+        </div>
+
+        <div style="display: flex ; margin-top: 20px; margin-left: 10px">
+            <img src="images/sova.gif" alt="Описание гифки" class="gif" width="150" height="150">
+            <p style="margin-left: 20px;"> <a href="Characters.html" style="color: #6d13c6;">Совунью</a> - спортивную и заботливую сову. Совунья одновременно и повар, и рукодельница, и единственный врач.</p>
+        </div>
+
+        <p>Ромашковая долина - это удивительное место, где живут наши любимые персонажи. Дизайн долины и ее окрестностей характеризуется красивыми природными пейзажами, разнообразием растительности и животного мира. В долине присутствуют уютные домики, окруженные зеленью, и живописные поля. Окрестности долины предлагают разнообразные ландшафты, включая горные массивы, леса, реки и озера.</p>
+
+        <center>
+            <img src="images/dolina.jpg" alt="Описание гифки" class="gif" width="700" height="450">
+        </center>
+        <p>Добро пожаловать в наш волшебный мир! Здесь вы найдете новых друзей, узнаете много интересного и получите массу положительных эмоций. Ромашковая долина смешариков ждет вас!</p>
+    </div>
+
+   
+
+
+    <footer>
+        <center>
+            <p>Адрес: ул. Пушкина, 12а</p>
+            <p>Email: FanSmesharikiTop@mail.ru</p>
+            <p>Телефон: +7 (800) 600 35-35</p>
+        </center>
+    </footer>
+</body>
+</html>

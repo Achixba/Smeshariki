@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        header {
+            background-image: url('images/logo.png');
+            height: 250px;
+            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем шапку по горизонтали */
+        }
+
+        /* Стили для выпадающего меню */
+
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #357ecc;
+            padding: 20px;
+            align-items: center;
+            margin-top: 10px; /* добавьте нужный вам отступ сверху */
+            margin-bottom: 10px;
+        }
+
+            .menu a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                width: 150px; /* Увеличьте значение ширины по вашему выбору */
+                text-align: center;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+                .menu a:hover {
+                    background-color:;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
+                }
+
+        body {
+            background-image: url('images/fon.jpg');
+            background-size: auto;
+            background-repeat: repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем страницу по горизонтали */
+
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+        }
+
+        .content {
+            height: 2800px; /* Пример высоты контента */
+            max-width: 1200px;
+            overflow-y: hidden; /* Включаем вертикальный скролл для контента */
+            margin: 0 auto;
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+            background-color: white;
+        }
+
+        footer {
+            background-color: #2698db;
+            padding: 30px;
+        }
+
+            footer p {
+                color: white;
+                display: inline; /* располагает элементы в одну строку */
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+
+        .paper {
+            position: relative;
+            width: 1200px;
+        }
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .note {
+            width: 450px;
+            height: 350px;
+            position: absolute;
+        }
+
+        .note1 {
+            top: 10px;
+            left: 10px;
+        }
+
+        .note2 {
+            top: 300px;
+            left: 600px;
+        }
+
+        .note3 {
+            top: 750px;
+            left: 100px;
+        }
+
+        .note4 {
+            top: 450px;
+            left: 1200px;
+        }
+
+        .note5 {
+            top: 50px;
+            left: 1300px;
+        }
+
+        .note6 {
+            top: 950px;
+            left: 850px;
+        }
+      
+
+        h1 {
+            text-align: center;
+            font-family: 'Kalam', cursive;
+        }
+
+        p {
+            font-family: 'Kalam', cursive;
+            font-size: 23px;
+            margin-left: 10px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header></header>
+
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
+    </div>
+
+    <div class="paper">
+        <img src="images/paper.jpg" alt="Бумага" width="2000">
+
+        <div class="container">
+            <img class="note note1" src="images/note1.png" alt="Note 1">
+
+            <a href="https://www.1tv.ru/shows/dobroe-utro/pro-kulturu/pochuvstvuy-sebya-nyushey-dobroe-utro-fragment-vypuska-ot-09-06-2023">
+                <img class="note note2" src="images/note2.png" alt="Note 2">
+            </a>
+
+            <a href="https://www.parents.ru/article/iskusstvo-byt-kruglym-v-moskve-otkrylas-vystavka-priurochennaya-k-20-letiyu-smesharikov/">
+                <img class="note note3" src="images/note3.png" alt="Note 3">
+            </a>
+
+            <a href="https://www.1tv.ru/shows/dobroe-utro/pro-kulturu/pochuvstvuy-sebya-nyushey-dobroe-utro-fragment-vypuska-ot-09-06-2023">
+                <img class="note note4" src="images/note4.png" alt="Note 4">
+            </a>
+
+            <a href="https://ria.ru/20230617/multiplikatsiya-1877809447.html">
+                <img class="note note5" src="images/note5.png" alt="Note 5">
+            </a>
+
+            <a href="https://iz.ru/1525686/valeriia-chub/vechno-molodoi-vechno-kruglyi-smesharikam-20-let">
+                <img class="note note6" src="images/note6.png" alt="Note 6">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <center>
+            <p>Адрес: ул. Примерная, 123</p>
+            <p>Email: example@example.com</p>
+            <p>Телефон: +1 (234) 567-890</p>
+        </center>
+    </footer>
+</body>
+</html>
+
+
+

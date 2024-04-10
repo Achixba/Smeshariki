@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Догоняня</title>
+    <style type="text/css">
+
+        header {
+            background-image: url('images/logo.png');
+            height: 250px;
+            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем шапку по горизонтали */
+        }
+
+        /* Стили для выпадающего меню */
+
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #357ecc;
+            padding: 20px;
+            align-items: center;
+            margin-top: 10px; /* добавьте нужный вам отступ сверху */
+            margin-bottom: 10px;
+        }
+
+            .menu a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                width: 150px; /* Увеличьте значение ширины по вашему выбору */
+                text-align: center;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+                .menu a:hover {
+                    background-color:;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
+                }
+        body {
+            background-image: url('images/fon.jpg');
+            background-size: auto;
+            background-repeat: repeat;
+            background-position: center;
+            line-height: 15px;
+            margin: 0 auto;
+            padding: 0
+        }
+
+
+        .fullscreen-button {
+            background-image: url('images/fullscreen.png');
+            width: 100px; /* Замените на желаемую ширину */
+            height: 100px; /* Замените на желаемую высоту */
+            background-size: contain;
+            border: none;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0); /* Прозрачный белый цвет (альфа-канал установлен на 0) */
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .container {
+            position: relative; /* Добавьте позиционирование relative для родительского контейнера */
+        }
+        
+
+
+        footer {
+            background-color: #2698db;
+            padding: 30px;
+
+        }
+
+            footer p {
+                color: white;
+                display: inline; /* располагает элементы в одну строку */
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+
+    </style>
+    <script type="text/javascript">
+
+				var ev_basefolder = '';
+				var extravote_text=Array('Ваш браузер не поддерживает AJAX!','Оцениваем','Спасибо, оценка  принята!','You need to login to rate this item.','Вы уже оценили эту игру.','(Оценок игры %s)','(Оценок игры %s)',' ');
+
+document.vGAME = {md5:"640454a4207a5459f0af8b5b5638da9e",name:"Игра Смешарики: Догоняня",url:"https://vseigru.net/igry-smeshariki/14533-igra-smeshariki-dogonyanya.html",image:"https://vseigru.net/flash/all/igry-smeshariki/1.jpg",type:"html5",fullscreen:"none"}
+    </script>
+    </head>
+
+<body>
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
+    </div>
+
+    <div class="container" style="position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: 10px;">
+        <iframe src="https://g.vseigru.net/12/igra-smeshariki-dogonyanya" width="700" height="670" sandbox="allow-pointer-lock allow-same-origin allow-scripts allow-modals" allowfullscreen="true" scrolling="no"></iframe>
+        <button class="fullscreen-button" onclick="toggleFullscreen()"></button>
+    </div>
+
+
+    <script>
+        function toggleFullscreen() {
+            var iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { /* Firefox */
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { /* IE/Edge */
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+
+    <footer>
+        <center>
+            <p>Адрес: ул. Примерная, 123</p>
+            <p>Email: example@example.com</p>
+            <p>Телефон: +1 (234) 567-890</p>
+        </center>
+    </footer>
+
+
+</body>

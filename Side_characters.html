@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Второстепенные персонажи</title>
+    <style>
+
+        header {
+            background-image: url('images/logo.png');
+            height: 250px;
+            width: 600px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+        }
+
+
+
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #357ecc;
+            padding: 20px;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            .menu a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: white;
+                padding: 5px 10px;
+                width: 150px;
+                text-align: center;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+                .menu a:hover {
+                    background-color:;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
+                }
+
+        body {
+            background-image: url('images/fon.jpg');
+            background-size: auto;
+            background-repeat: repeat;
+            background-position: center;
+            margin: 0 auto; /* Центрируем страницу по горизонтали */
+
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+        }
+
+        .content {
+            height: 1550px; /* Пример высоты контента */
+            max-width: 1200px;
+            overflow-y: hidden; /* Включаем вертикальный скролл для контента */
+            margin: 0 auto;
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
+            background-color: white;
+        }
+
+
+        footer {
+            background-color: #2698db;
+            padding: 30px;
+        }
+
+            footer p {
+                color: white;
+                display: inline; /* располагает элементы в одну строку */
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9 {
+            border: 1px solid black; /* Добавление черной обводки толщиной 2 пикселя */
+        }
+
+        .image6, .image7, .image8, .image9 {
+            margin-top: 20px; /* Добавление отступа сверху в 20 пикселей */
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+            .modal img {
+                max-width: 80%;
+                max-height: 80%;
+                display: block;
+                margin: 0 auto;
+            }
+
+        .container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+            .container img {
+                width: 400px; /* Задайте требуемую ширину */
+                height: auto; /* Автоматически рассчитать высоту, чтобы сохранить пропорции */
+            }
+
+            .container p {
+                font-family: 'Kalam', cursive;
+                font-size: 30px;
+                margin-left: 10px;
+            }
+
+        p {
+            font-family: 'Kalam', cursive;
+            font-size: 23px;
+            margin-left: 10px;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
+    </div>
+
+    <div class="content">
+        <div class="image-container">
+            <div class="image1">
+                <img src="images/lovelas.jpg" onclick="showModal('Первый раз этот герой появился в серии Страшилка для Нюши. Чёрный Ловелас своей игрой на гитаре завораживает женщин, и они сходят с ума. На самом деле его выдумали Крош и Ёжик, когда рассказывали Нюше страшилку. После расказанной истории ночью Нюша встретила под большой сосной некого героя, в мультфильме был виден лишь его силуэт. «Вы Чёрный Ловелас?» «Если вам так угодно, мадемуазель.»', this)">
+                <p align="center">Черный ловелас</p>
+            </div>
+            <div class="image2">
+                <img src="images/bibi.jpg" onclick="showModal('Родился 10 июня 2006 года — разумный робот, которого сделал Пин в минуты одиночества. Не разговаривает, зато издает компьютерные звуки, напоминающие сигналы, издаваемые роботом R2-D2 из фильма-саги «Звёздные войны» (не обошлось тут без влияния, Star Wars много кто любит). Сначала он учился всему, чему Пин мог его научить, а потом исчез. Через некоторое время вернулся, и выяснилось, что он был в космосе, и что приехал ненадолго, и потом опять улетит. Время от времени прилетает навестить смешариков. Учится в космической академии.', this)">
+                <p align="center">Биби</p>
+            </div>
+            <div class="image3">
+                <img src="images/mish.jpg" onclick="showModal('Родился 2 января — аферист, выдает себя за модельера всемирной академии кутюрье. Очень прожорливый. Обманул Нюшу, заполучив деньги, в канун Нового года и скрылся. Родом из Саратова. В реальности работает режиссёром. Мышарик участвует в Азбуке финансовой грамотности (2Д) и в спин-оффе Пин-код: финансовая грамотность (в серии Дискуссия в 3Д, в остальных - камео в объясняющих вставках (чаще всего изображает мошенников).', this)">
+                <p align="center">Мышарик</p>
+            </div>
+            <div class="image4">
+                <img src="images/klon.jpg" onclick="showModal('Клон Лосяша — это создание Лосяша прошлых лет, о котором Лосяш не очень хочет вспоминать. В молодости Лосяш был очень грубым и невоспитанным, никто не хотел с ним дружить, поэтому однажды он решает создать себе клона. Клон в точности копировал Лосяша, даже его характер, и вместе они принялись хулиганить. Но Лосяш потом решил стать порядочным лосём, а клон — нет. И однажды их пути разошлись. В серии «Невоспитанный клон» двух героев ждёт встреча, клон попытается переубедить Лосяша вновь встать на путь злодея, а заодно будет много спорить с Пином. Выглядит клон как Лосяш, но разницу можно заметить по выражению лица и позам героя, они очень хулиганские.', this)">
+                <p align="center">Клон Лосяша</p>
+            </div>
+            <div class="image5">
+                <img src="images/pandi.jpg" onclick="showModal('Панди — племянница Копатыча, девочка-пацанка, младше Нюши. Приехала погостить на лето. Её полное имя — Степанида, но так её называют только старшие Смешарики. Все остальные зовут её Панди или Стеша. Она — самый младший Смешарик в мультсериале. Носит розовый бантик на голове, любит кукол, похожих на Monster High.', this)">
+                <p align="center">Панди</p>
+            </div>
+            <div class="image6">
+                <img src="images/nyanya.jpg" onclick="showModal('Робот, которого создал Пин. В первой серий она была слишком заботливой и смешарикам пришлось убегать от неё. Также няня появилась в серий Ёжик в тумане, где была управляемым роботом, который вышел из строя. О ней было записано в старинной книге, в которой также написано о конце света. В серии Исправительное питание она кормила Кроша, Ёжика и Бараша нелюбимой едой. В серии Вид сверху нянчила Кроша и Ёжика, а в серии Стальное сердце наблюдала за звездами.', this)">
+                <p align="center">Железная няня</p>
+            </div>
+            <div class="image7">
+                <img src="images/hrum.jpg" onclick="showModal('Хрум — новогодний персонаж в Смешариках, символ 2012 года. Маленький зелёный дракончик. Внешне Хрум - зелёного цвета, но пальцы, а крылья, гребень и кончик хвоста у него красные. Добрые большие глаза. Ему больше тысячи лет, и он очень любит танцы. Хрум и Петя появлялсь в серии Вид сверху: Петя лепил куличики из песка, Хрум сжигал их.', this)">
+                <p align="center">Хрум</p>
+            </div>
+            <div class="image8">
+                <img src="images/tigr.jpg" onclick="showModal('Родилась 31 декабря — новогодняя фея-актриса, очаровала некоторых Смешариков (Копатыча, Кар-Карыча и Бараша). Работает у Мышарика. В серии Власть моды её фотография была в журнале Нюши, в серии Вид сверху она купила картину Копатыча и там у неё более жёлтая шерсть, а в серии Дискуссия её фотогафия есть в журнале Лосяша.', this)">
+                <p align="center">Тигриция</p>
+            </div>
+            <div class="image9">
+                <img src="images/lili.jpg" onclick="showModal('Лили - ежиха, в которую был влюблён Ёжик. Ёжик решил, что Лили попала в беду и вместе с Крошем кинулся её спасать. Но оказалось, что Лили ни в какую беду не попадала. Это просто этикетка на бутылке. Её изображение появляется в журнале Нюши в серии Новогодняя почта. Выяснилось, что её полное имя - Лили Марлен, она кинозвезда. Также её фотография появляется в серии Вид сверху.', this)">
+                <p align="center">Лили</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        function showModal(text, clickedImage) {
+            var specificImage = document.createElement('img');
+            specificImage.src = clickedImage.src;
+            specificImage.style.width = '400px'; // Set the width as per your requirement
+            specificImage.style.height = '400px'; // Set the height as per your requirement
+
+            var specificText = document.createElement('p');
+            specificText.textContent = text;
+
+            var container = document.querySelector('.container');
+            var existingImage = container.querySelector('img');
+            var existingText = container.querySelector('p');
+
+            if (existingImage) {
+                existingImage.src = specificImage.src; // Replace the existing image with the new one
+            } else {
+                container.appendChild(specificImage); // If no existing image, simply append the new one
+            }
+
+            if (existingText) {
+                existingText.textContent = specificText.textContent; // Replace the existing text with the new one
+            } else {
+                container.appendChild(specificText); // If no existing text, simply append the new one
+            }
+        }
+    </script>
+
+    <footer>
+        <center>
+            <p>Адрес: ул. Примерная, 123</p>
+            <p>Email: example@example.com</p>
+            <p>Телефон: +1 (234) 567-890</p>
+        </center>
+    </footer>
