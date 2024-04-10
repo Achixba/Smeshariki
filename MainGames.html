@@ -2,144 +2,145 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Игры</title>
-    <style type="text/css">
+   <title>Игры</title>
+<style type="text/css">
 
-        header {
-            background-image: url('images/logo.png');
-            height: 250px;
-            width: 600px; /* Øèðèíà 100% äëÿ ðàñòÿæåíèÿ ïî øèðèíå ñòðàíèöû */
-            background-size: 100% 100%; /* Ðàñòÿãèâàåì èçîáðàæåíèå ïî øèðèíå, ñîõðàíÿÿ ïðîïîðöèè */
-            background-repeat: no-repeat;
-            background-position: center;
-            margin: 0 auto; /* Öåíòðèðóåì øàïêó ïî ãîðèçîíòàëè */
+    header {
+        background-image: url('images/logo.png');
+        height: 250px;
+        width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+        background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto; /* Центрируем шапку по горизонтали */
+    }
+
+    /* Стили для выпадающего меню */
+
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        background-color: #357ecc;
+        padding: 20px;
+        align-items: center;
+        margin-top: 10px; /* добавьте нужный вам отступ сверху */
+        margin-bottom: 10px;
+    }
+
+        .menu a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            width: 150px; /* Увеличьте значение ширины по вашему выбору */
+            text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
         }
 
-        /* Ñòèëè äëÿ âûïàäàþùåãî ìåíþ */
-
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            background-color: #357ecc;
-            padding: 20px;
-            align-items: center;
-            margin-top: 10px; /* äîáàâüòå íóæíûé âàì îòñòóï ñâåðõó */
-            margin-bottom: 10px;
-        }
-
-            .menu a {
-                margin-right: 10px;
-                text-decoration: none;
-                color: white;
-                padding: 5px 10px;
-                width: 150px; /* Óâåëè÷üòå çíà÷åíèå øèðèíû ïî âàøåìó âûáîðó */
-                text-align: center;
-                transition: box-shadow 0.3s ease-in-out;
+            .menu a:hover {
+                background-color:;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
             }
 
-                .menu a:hover {
-                    background-color:;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* äîáàâëÿåì òåíü ïðè íàâåäåíèè */
-                }
+    body {
+        background-image: url('images/fon.jpg');
+        background-size: auto;
+        background-repeat: repeat;
+        background-position: center;
+        line-height: 15px;
+        margin: 0 auto;
+        padding: 0
+    }
 
-        body {
-            background-image: url('images/fon.jpg');
-            background-size: auto;
-            background-repeat: repeat;
-            background-position: center;
-            line-height: 15px;
-            margin: 0 auto;
-            padding: 0
+    footer {
+        background-color: #2698db;
+        padding: 30px;
+    }
+
+        footer p {
+            color: white;
+            display: inline; /* располагает элементы в одну строку */
+            margin-right: 100px;
+            margin-left: 100px;
         }
 
-        footer {
-            background-color: #2698db;
-            padding: 30px;
+    .container {
+        display: flex;
+        justify-content: flex-start; /* Выравнивание элементов по левому краю контейнера */
+        align-items: center; /* Выравнивание элементов по вертикали */
+        text-align: center; /* Центрирование текста внутри элементов */
+        margin-top: 40px;
+    }
+
+        .container img {
+            width: 600px; /* Задайте требуемую ширину */
+            height: auto; /* Автоматически рассчитать высоту, чтобы сохранить пропорции */
         }
 
-            footer p {
-                color: white;
-                display: inline; /* ðàñïîëàãàåò ýëåìåíòû â îäíó ñòðîêó */
-                margin-right: 100px;
-                margin-left: 100px;
-            }
-
-        .container {
-            display: flex;
-            justify-content: flex-start; /* Âûðàâíèâàíèå ýëåìåíòîâ ïî ëåâîìó êðàþ êîíòåéíåðà */
-            align-items: center; /* Âûðàâíèâàíèå ýëåìåíòîâ ïî âåðòèêàëè */
-            text-align: center; /* Öåíòðèðîâàíèå òåêñòà âíóòðè ýëåìåíòîâ */
-            margin-top: 40px;
+        .container p {
+            font-size: 30px; /* Установка размера шрифта в 20 пикселей */
+            margin-left: 200px;
         }
 
-            .container img {
-                width: 600px; /* Çàäàéòå òðåáóåìóþ øèðèíó */
-                height: auto; /* Àâòîìàòè÷åñêè ðàññ÷èòàòü âûñîòó, ÷òîáû ñîõðàíèòü ïðîïîðöèè */
-            }
+    p {
+        font-family: 'Kalam', cursive;
+        font-size: 23px;
+        margin-left: 10px;
+    }
 
-            .container p {
-                font-size: 30px; /* Óñòàíîâêà ðàçìåðà øðèôòà â 20 ïèêñåëåé */
-                margin-left: 200px;
-            }
+    .image1, .image2 {
+        width: 300px; /* Задайте требуемую ширину */
+        height: auto; /* Автоматически рассчитать высоту, чтобы сохранить пропорции */
+        margin: 250px; /* Добавление отступов между изображениями */
+    }
+</style>
+<header></header>
 
-        p {
-            font-family: 'Kalam', cursive;
-            font-size: 23px;
-            margin-left: 10px;
-        }
-
-        .image1, .image2 {
-            width: 300px; /* Çàäàéòå òðåáóåìóþ øèðèíó */
-            height: auto; /* Àâòîìàòè÷åñêè ðàññ÷èòàòü âûñîòó, ÷òîáû ñîõðàíèòü ïðîïîðöèè */
-            margin: 250px; /* Äîáàâëåíèå îòñòóïîâ ìåæäó èçîáðàæåíèÿìè */
-        }
-    </style>
-    <header></header>
-
-    <body>
-        <div class="menu">
-            <a href="index.html">Ãëàâíàÿ</a>
-            <a href="Characters.html">Ïåðñîíàæè</a>
-            <a href="Side_characters.html">Âòîðîñòåïåííûå ïåðñîíàæè</a>
-            <a href="Series.html">Ñåðèè</a>
-            <a href="Music.html">Ìóçûêà</a>
-            <a href="MainGames.html">Èãðû</a>
-            <a href="Comp.html">Âûñòàâêà</a>
-            <a href="Hystory.html">Èñòîðèÿ</a>
-            <a href="Actors.html">Àêòåðû</a>
-            <a href="Smi.html">ÑÌÈ</a>
-        </div>
+<body>
+    <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
+    </div>
 
 
-        <div class="content">
-            <div class="container">
-                <div class="image1">
-                    <a href="Game.html">
-                        <img src="images/gamep.png" style="width: 220%; height: auto;"> <!-- Èçìåíåíèå ðàçìåðà ïåðâîãî èçîáðàæåíèÿ -->
-                        <p>Догоняня</p>
-                    </a>
-                </div>
+    <div class="content">
+        <div class="container">
+            <div class="image1">
+                <a href="Game.html">
+                    <img src="images/gamep.png" style="width: 220%; height: auto;"> <!-- Изменение размера первого изображения -->
+                    <p>Догоняня</p>
+                </a>
+            </div>
 
-                <div class="image2">
-                    <a href="Game1.html">
-                        <img src="images/game1p.png" style="width: 220%; height: auto;"> <!-- Èçìåíåíèå ðàçìåðà âòîðîãî èçîáðàæåíèÿ -->
-                        <p style="margin-left: 280px;">Нюша и звезды</p>
-                    </a>
-                </div>
+            <div class="image2">
+                <a href="Game1.html">
+                    <img src="images/game1p.png" style="width: 220%; height: auto;"> <!-- Изменение размера второго изображения -->
+                    <p style="margin-left: 280px;">Нюша и звезды</p>
+                </a>
             </div>
         </div>
+    </div>
 
 
 
 
-        <footer>
-            <center>
-                <p>Àäðåñ: óë. Ïðèìåðíàÿ, 123</p>
-                <p>Email: example@example.com</p>
-                <p>Òåëåôîí: +1 (234) 567-890</p>
-            </center>
-        </footer>
+    <footer>
+        <center>
+            <p>Адрес: ул. Примерная, 123</p>
+            <p>Email: example@example.com</p>
+            <p>Телефон: +1 (234) 567-890</p>
+        </center>
+    </footer>
 
 
+</body>
     </body>
