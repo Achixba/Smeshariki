@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Догоняня</title>
+	 <meta charset="utf-8">
+    <title>Г„Г®ГЈГ®Г­ГїГ­Гї</title>
     <style type="text/css">
 
         header {
             background-image: url('images/logo.png');
             height: 250px;
-            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
-            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
+            width: 600px; /* ГГЁГ°ГЁГ­Г  100% Г¤Г«Гї Г°Г Г±ГІГїГ¦ГҐГ­ГЁГї ГЇГ® ГёГЁГ°ГЁГ­ГҐ Г±ГІГ°Г Г­ГЁГ¶Г» */
+            background-size: 100% 100%; /* ГђГ Г±ГІГїГЈГЁГўГ ГҐГ¬ ГЁГ§Г®ГЎГ°Г Г¦ГҐГ­ГЁГҐ ГЇГ® ГёГЁГ°ГЁГ­ГҐ, Г±Г®ГµГ°Г Г­ГїГї ГЇГ°Г®ГЇГ®Г°Г¶ГЁГЁ */
             background-repeat: no-repeat;
             background-position: center;
-            margin: 0 auto; /* Центрируем шапку по горизонтали */
+            margin: 0 auto; /* Г–ГҐГ­ГІГ°ГЁГ°ГіГҐГ¬ ГёГ ГЇГЄГі ГЇГ® ГЈГ®Г°ГЁГ§Г®Г­ГІГ Г«ГЁ */
         }
 
-        /* Стили для выпадающего меню */
+        /* Г‘ГІГЁГ«ГЁ Г¤Г«Гї ГўГ»ГЇГ Г¤Г ГѕГ№ГҐГЈГ® Г¬ГҐГ­Гѕ */
 
 
         .menu {
@@ -23,7 +24,7 @@
             background-color: #357ecc;
             padding: 20px;
             align-items: center;
-            margin-top: 10px; /* добавьте нужный вам отступ сверху */
+            margin-top: 10px; /* Г¤Г®ГЎГ ГўГјГІГҐ Г­ГіГ¦Г­Г»Г© ГўГ Г¬ Г®ГІГ±ГІГіГЇ Г±ГўГҐГ°ГµГі */
             margin-bottom: 10px;
         }
 
@@ -32,14 +33,14 @@
                 text-decoration: none;
                 color: white;
                 padding: 5px 10px;
-                width: 150px; /* Увеличьте значение ширины по вашему выбору */
+                width: 150px; /* Г“ГўГҐГ«ГЁГ·ГјГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ ГёГЁГ°ГЁГ­Г» ГЇГ® ГўГ ГёГҐГ¬Гі ГўГ»ГЎГ®Г°Гі */
                 text-align: center;
                 transition: box-shadow 0.3s ease-in-out;
             }
 
                 .menu a:hover {
                     background-color:;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ ГІГҐГ­Гј ГЇГ°ГЁ Г­Г ГўГҐГ¤ГҐГ­ГЁГЁ */
                 }
         body {
             background-image: url('images/fon.jpg');
@@ -54,12 +55,12 @@
 
         .fullscreen-button {
             background-image: url('images/fullscreen.png');
-            width: 100px; /* Замените на желаемую ширину */
-            height: 100px; /* Замените на желаемую высоту */
+            width: 100px; /* Г‡Г Г¬ГҐГ­ГЁГІГҐ Г­Г  Г¦ГҐГ«Г ГҐГ¬ГіГѕ ГёГЁГ°ГЁГ­Гі */
+            height: 100px; /* Г‡Г Г¬ГҐГ­ГЁГІГҐ Г­Г  Г¦ГҐГ«Г ГҐГ¬ГіГѕ ГўГ»Г±Г®ГІГі */
             background-size: contain;
             border: none;
             cursor: pointer;
-            background-color: rgba(255, 255, 255, 0); /* Прозрачный белый цвет (альфа-канал установлен на 0) */
+            background-color: rgba(255, 255, 255, 0); /* ГЏГ°Г®Г§Г°Г Г·Г­Г»Г© ГЎГҐГ«Г»Г© Г¶ГўГҐГІ (Г Г«ГјГґГ -ГЄГ Г­Г Г« ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­ Г­Г  0) */
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -67,7 +68,7 @@
         }
 
         .container {
-            position: relative; /* Добавьте позиционирование relative для родительского контейнера */
+            position: relative; /* Г„Г®ГЎГ ГўГјГІГҐ ГЇГ®Г§ГЁГ¶ГЁГ®Г­ГЁГ°Г®ГўГ Г­ГЁГҐ relative Г¤Г«Гї Г°Г®Г¤ГЁГІГҐГ«ГјГ±ГЄГ®ГЈГ® ГЄГ®Г­ГІГҐГ©Г­ГҐГ°Г  */
         }
         
 
@@ -80,7 +81,7 @@
 
             footer p {
                 color: white;
-                display: inline; /* располагает элементы в одну строку */
+                display: inline; /* Г°Г Г±ГЇГ®Г«Г ГЈГ ГҐГІ ГЅГ«ГҐГ¬ГҐГ­ГІГ» Гў Г®Г¤Г­Гі Г±ГІГ°Г®ГЄГі */
                 margin-right: 100px;
                 margin-left: 100px;
             }
@@ -89,24 +90,24 @@
     <script type="text/javascript">
 
 				var ev_basefolder = '';
-				var extravote_text=Array('Ваш браузер не поддерживает AJAX!','Оцениваем','Спасибо, оценка  принята!','You need to login to rate this item.','Вы уже оценили эту игру.','(Оценок игры %s)','(Оценок игры %s)',' ');
+				var extravote_text=Array('Г‚Г Гё ГЎГ°Г ГіГ§ГҐГ° Г­ГҐ ГЇГ®Г¤Г¤ГҐГ°Г¦ГЁГўГ ГҐГІ AJAX!','ГЋГ¶ГҐГ­ГЁГўГ ГҐГ¬','Г‘ГЇГ Г±ГЁГЎГ®, Г®Г¶ГҐГ­ГЄГ   ГЇГ°ГЁГ­ГїГІГ !','You need to login to rate this item.','Г‚Г» ГіГ¦ГҐ Г®Г¶ГҐГ­ГЁГ«ГЁ ГЅГІГі ГЁГЈГ°Гі.','(ГЋГ¶ГҐГ­Г®ГЄ ГЁГЈГ°Г» %s)','(ГЋГ¶ГҐГ­Г®ГЄ ГЁГЈГ°Г» %s)',' ');
 
-document.vGAME = {md5:"640454a4207a5459f0af8b5b5638da9e",name:"Игра Смешарики: Догоняня",url:"https://vseigru.net/igry-smeshariki/14533-igra-smeshariki-dogonyanya.html",image:"https://vseigru.net/flash/all/igry-smeshariki/1.jpg",type:"html5",fullscreen:"none"}
+document.vGAME = {md5:"640454a4207a5459f0af8b5b5638da9e",name:"Г€ГЈГ°Г  Г‘Г¬ГҐГёГ Г°ГЁГЄГЁ: Г„Г®ГЈГ®Г­ГїГ­Гї",url:"https://vseigru.net/igry-smeshariki/14533-igra-smeshariki-dogonyanya.html",image:"https://vseigru.net/flash/all/igry-smeshariki/1.jpg",type:"html5",fullscreen:"none"}
     </script>
     </head>
 
 <body>
     <div class="menu">
-        <a href="index.html">Главная</a>
-        <a href="Characters.html">Персонажи</a>
-        <a href="Side_characters.html">Второстепенные персонажи</a>
-        <a href="Series.html">Серии</a>
-        <a href="Music.html">Музыка</a>
-        <a href="MainGames.html">Игры</a>
-        <a href="Comp.html">Выставка</a>
-        <a href="Hystory.html">История</a>
-        <a href="Actors.html">Актеры</a>
-        <a href="Smi.html">СМИ</a>
+        <a href="index.html">ГѓГ«Г ГўГ­Г Гї</a>
+        <a href="Characters.html">ГЏГҐГ°Г±Г®Г­Г Г¦ГЁ</a>
+        <a href="Side_characters.html">Г‚ГІГ®Г°Г®Г±ГІГҐГЇГҐГ­Г­Г»ГҐ ГЇГҐГ°Г±Г®Г­Г Г¦ГЁ</a>
+        <a href="Series.html">Г‘ГҐГ°ГЁГЁ</a>
+        <a href="Music.html">ГЊГіГ§Г»ГЄГ </a>
+        <a href="MainGames.html">Г€ГЈГ°Г»</a>
+        <a href="Comp.html">Г‚Г»Г±ГІГ ГўГЄГ </a>
+        <a href="Hystory.html">Г€Г±ГІГ®Г°ГЁГї</a>
+        <a href="Actors.html">ГЂГЄГІГҐГ°Г»</a>
+        <a href="Smi.html">Г‘ГЊГ€</a>
     </div>
 
     <div class="container" style="position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: 10px;">
@@ -132,9 +133,9 @@ document.vGAME = {md5:"640454a4207a5459f0af8b5b5638da9e",name:"Игра Смешарики: Д
 
     <footer>
         <center>
-            <p>Адрес: ул. Примерная, 123</p>
+            <p>ГЂГ¤Г°ГҐГ±: ГіГ«. ГЏГ°ГЁГ¬ГҐГ°Г­Г Гї, 123</p>
             <p>Email: example@example.com</p>
-            <p>Телефон: +1 (234) 567-890</p>
+            <p>Г’ГҐГ«ГҐГґГ®Г­: +1 (234) 567-890</p>
         </center>
     </footer>
 
