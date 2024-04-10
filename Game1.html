@@ -2,20 +2,20 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Íþøà è çâåçäû</title>
+       <title>Нюша и звезды</title>
     <style type="text/css">
 
         header {
             background-image: url('images/logo.png');
             height: 250px;
-            width: 600px; /* Øèðèíà 100% äëÿ ðàñòÿæåíèÿ ïî øèðèíå ñòðàíèöû */
-            background-size: 100% 100%; /* Ðàñòÿãèâàåì èçîáðàæåíèå ïî øèðèíå, ñîõðàíÿÿ ïðîïîðöèè */
+            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
             background-repeat: no-repeat;
             background-position: center;
-            margin: 0 auto; /* Öåíòðèðóåì øàïêó ïî ãîðèçîíòàëè */
+            margin: 0 auto; /* Центрируем шапку по горизонтали */
         }
 
-        /* Ñòèëè äëÿ âûïàäàþùåãî ìåíþ */
+        /* Стили для выпадающего меню */
 
 
         .menu {
@@ -24,7 +24,7 @@
             background-color: #357ecc;
             padding: 20px;
             align-items: center;
-            margin-top: 10px; /* äîáàâüòå íóæíûé âàì îòñòóï ñâåðõó */
+            margin-top: 10px; /* добавьте нужный вам отступ сверху */
             margin-bottom: 10px;
         }
 
@@ -33,14 +33,14 @@
                 text-decoration: none;
                 color: white;
                 padding: 5px 10px;
-                width: 150px; /* Óâåëè÷üòå çíà÷åíèå øèðèíû ïî âàøåìó âûáîðó */
+                width: 150px; /* Увеличьте значение ширины по вашему выбору */
                 text-align: center;
                 transition: box-shadow 0.3s ease-in-out;
             }
 
                 .menu a:hover {
                     background-color:;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* äîáàâëÿåì òåíü ïðè íàâåäåíèè */
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
                 }
 
         body {
@@ -56,20 +56,20 @@
 
         .fullscreen-button {
             background-image: url('images/fullscreen.png');
-            width: 100px; /* Çàìåíèòå íà æåëàåìóþ øèðèíó */
-            height: 100px; /* Çàìåíèòå íà æåëàåìóþ âûñîòó */
+            width: 100px; /* Замените на желаемую ширину */
+            height: 100px; /* Замените на желаемую высоту */
             background-size: contain;
             border: none;
             cursor: pointer;
-            background-color: rgba(255, 255, 255, 0); /* Ïðîçðà÷íûé áåëûé öâåò (àëüôà-êàíàë óñòàíîâëåí íà 0) */
-            position: absolute; /* Èñïîëüçóéòå absolute äëÿ ïîçèöèîíèðîâàíèÿ îòíîñèòåëüíî ðîäèòåëüñêîãî ýëåìåíòà */
-            bottom: 20px; /* Ðàñïîëîæèòå êíîïêó ïîä êîíòåéíåðîì ñ èãðîé */
-            left: 50%; /* Öåíòðèðóéòå êíîïêó ïî ãîðèçîíòàëè */
-            transform: translateX(-50%); /* Öåíòðèðóéòå êíîïêó ïî ãîðèçîíòàëè */
+            background-color: rgba(255, 255, 255, 0); /* Прозрачный белый цвет (альфа-канал установлен на 0) */
+            position: absolute; /* Используйте absolute для позиционирования относительно родительского элемента */
+            bottom: 20px; /* Расположите кнопку под контейнером с игрой */
+            left: 50%; /* Центрируйте кнопку по горизонтали */
+            transform: translateX(-50%); /* Центрируйте кнопку по горизонтали */
         }
 
         .container {
-            position: relative; /* Äîáàâüòå ïîçèöèîíèðîâàíèå relative äëÿ ðîäèòåëüñêîãî êîíòåéíåðà */
+            position: relative; /* Добавьте позиционирование relative для родительского контейнера */
         }
 
 
@@ -81,7 +81,7 @@
 
             footer p {
                 color: white;
-                display: inline; /* ðàñïîëàãàåò ýëåìåíòû â îäíó ñòðîêó */
+                display: inline; /* располагает элементы в одну строку */
                 margin-right: 100px;
                 margin-left: 100px;
             }
@@ -89,24 +89,24 @@
     <script type="text/javascript">
 
         var ev_basefolder = '';
-        var extravote_text = Array('Âàø áðàóçåð íå ïîääåðæèâàåò AJAX!', 'Îöåíèâàåì', 'Ñïàñèáî, îöåíêà  ïðèíÿòà!', 'You need to login to rate this item.', 'Âû óæå îöåíèëè ýòó èãðó.', '(Îöåíîê èãðû %s)', '(Îöåíîê èãðû %s)', ' ');
+        var extravote_text = Array('Ваш браузер не поддерживает AJAX!', 'Оцениваем', 'Спасибо, оценка  принята!', 'You need to login to rate this item.', 'Вы уже оценили эту игру.', '(Оценок игры %s)', '(Оценок игры %s)', ' ');
 
-        document.vGAME = { md5: "928c097e0477ad2c671bd9e71cd7d24f", name: "Èãðà Ñìåøàðèêè: Íþøà è Çâåçäû", url: "https://vseigru.net/igry-smeshariki/14535-igra-smeshariki-nyusha-i-zvezdy.html", image: "https://vseigru.net/flash/all/igry-smeshariki/2.jpg", type: "html5", fullscreen: "none" }
+        document.vGAME = { md5: "928c097e0477ad2c671bd9e71cd7d24f", name: "Игра Смешарики: Нюша и Звезды", url: "https://vseigru.net/igry-smeshariki/14535-igra-smeshariki-nyusha-i-zvezdy.html", image: "https://vseigru.net/flash/all/igry-smeshariki/2.jpg", type: "html5", fullscreen: "none" }
     </script>
 </head>
 
 <body>
     <div class="menu">
-        <a href="index.html">Ãëàâíàÿ</a>
-        <a href="Characters.html">Ïåðñîíàæè</a>
-        <a href="Side_characters.html">Âòîðîñòåïåííûå ïåðñîíàæè</a>
-        <a href="Series.html">Ñåðèè</a>
-        <a href="Music.html">Ìóçûêà</a>
-        <a href="MainGames.html">Èãðû</a>
-        <a href="Comp.html">Âûñòàâêà</a>
-        <a href="Hystory.html">Èñòîðèÿ</a>
-        <a href="Actors.html">Àêòåðû</a>
-        <a href="Smi.html">ÑÌÈ</a>
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
     </div>
 
     <div class="container" style="position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: 10px;">
@@ -134,14 +134,15 @@
 
     <footer>
         <center>
-            <p>Àäðåñ: óë. Ïðèìåðíàÿ, 123</p>
+            <p>Адрес: ул. Примерная, 123</p>
             <p>Email: example@example.com</p>
-            <p>Òåëåôîí: +1 (234) 567-890</p>
+            <p>Телефон: +1 (234) 567-890</p>
         </center>
     </footer>
 
 
 </body>
+
 
 
 
