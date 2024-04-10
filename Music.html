@@ -2,19 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Ìóçûêà</title>
+       <title>Музыка</title>
     <style>
         header {
             background-image: url('images/logo.png');
             height: 250px;
-            width: 600px; /* Øèðèíà 100% äëÿ ðàñòÿæåíèÿ ïî øèðèíå ñòðàíèöû */
-            background-size: 100% 100%; /* Ðàñòÿãèâàåì èçîáðàæåíèå ïî øèðèíå, ñîõðàíÿÿ ïðîïîðöèè */
+            width: 600px; /* Ширина 100% для растяжения по ширине страницы */
+            background-size: 100% 100%; /* Растягиваем изображение по ширине, сохраняя пропорции */
             background-repeat: no-repeat;
             background-position: center;
-            margin: 0 auto; /* Öåíòðèðóåì øàïêó ïî ãîðèçîíòàëè */
+            margin: 0 auto; /* Центрируем шапку по горизонтали */
         }
 
-        /* Ñòèëè äëÿ âûïàäàþùåãî ìåíþ */
+        /* Стили для выпадающего меню */
 
 
         .menu {
@@ -23,7 +23,7 @@
             background-color: #357ecc;
             padding: 20px;
             align-items: center;
-            margin-top: 10px; /* äîáàâüòå íóæíûé âàì îòñòóï ñâåðõó */
+            margin-top: 10px; /* добавьте нужный вам отступ сверху */
             margin-bottom: 10px;
         }
 
@@ -32,14 +32,14 @@
                 text-decoration: none;
                 color: white;
                 padding: 5px 10px;
-                width: 150px; /* Óâåëè÷üòå çíà÷åíèå øèðèíû ïî âàøåìó âûáîðó */
+                width: 150px; /* Увеличьте значение ширины по вашему выбору */
                 text-align: center;
                 transition: box-shadow 0.3s ease-in-out;
             }
 
                 .menu a:hover {
                     background-color:;
-                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* äîáàâëÿåì òåíü ïðè íàâåäåíèè */
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* добавляем тень при наведении */
                 }
 
         body {
@@ -47,17 +47,17 @@
             background-size: auto;
             background-repeat: repeat;
             background-position: unset;
-            margin: 0 auto; /* Öåíòðèðóåì ñòðàíèöó ïî ãîðèçîíòàëè */
+            margin: 0 auto; /* Центрируем страницу по горизонтали */
 
-            overflow-x: hidden; /* Ñêðûâàåì ãîðèçîíòàëüíûé ñêðîëë */
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
         }
 
         .content {
-            height: 800px; /* Ïðèìåð âûñîòû êîíòåíòà */
+            height: 800px; /* Пример высоты контента */
             max-width: 1200px;
-            overflow-y: hidden; /* Âêëþ÷àåì âåðòèêàëüíûé ñêðîëë äëÿ êîíòåíòà */
+            overflow-y: hidden; /* Включаем вертикальный скролл для контента */
             margin: 0 auto;
-            overflow-x: hidden; /* Ñêðûâàåì ãîðèçîíòàëüíûé ñêðîëë */
+            overflow-x: hidden; /* Скрываем горизонтальный скролл */
             background-color: white;
         }
 
@@ -68,7 +68,7 @@
 
             footer p {
                 color: white;
-                display: inline; /* ðàñïîëàãàåò ýëåìåíòû â îäíó ñòðîêó */
+                display: inline; /* располагает элементы в одну строку */
                 margin-right: 100px;
                 margin-left: 100px;
             }
@@ -115,7 +115,7 @@
             }
 
                 #playlist li button {
-                    flex: 1; /* Ðàâíîìåðíîå ðàñïðåäåëåíèå ïðîñòðàíñòâà ìåæäó êíîïêàìè */
+                    flex: 1; /* Равномерное распределение пространства между кнопками */
                     background-color: #d4d2d3;
                     border: none;
                     padding: 10px 20px;
@@ -125,7 +125,7 @@
                     transition: background-color 0.3s ease;
                     display: flex;
                     align-items: center;
-                    flex-direction: row-reverse; /* Èçìåíåíèå ïîðÿäêà îòîáðàæåíèÿ ýëåìåíòîâ */
+                    flex-direction: row-reverse; /* Изменение порядка отображения элементов */
                 }
 
                     #playlist li button:hover {
@@ -133,10 +133,10 @@
                     }
 
                     #playlist li button img {
-                        width: 20px; /* Çàäàéòå íóæíóþ øèðèíó èçîáðàæåíèÿ */
-                        height: 20px; /* Çàäàéòå íóæíóþ âûñîòó èçîáðàæåíèÿ */
-                        margin-right: 10px; /* Çàäàéòå îòñòóï ñïðàâà îò èçîáðàæåíèÿ */
-                        border-radius: 30%; /* Äëÿ êðóãëîãî èçîáðàæåíèÿ */
+                        width: 20px; /* Задайте нужную ширину изображения */
+                        height: 20px; /* Задайте нужную высоту изображения */
+                        margin-right: 10px; /* Задайте отступ справа от изображения */
+                        border-radius: 30%; /* Для круглого изображения */
                         margin-left: auto;
                     }
 
@@ -160,22 +160,22 @@
     <header></header>
 
     <div class="menu">
-        <a href="index.html">Ãëàâíàÿ</a>
-        <a href="Characters.html">Ïåðñîíàæè</a>
-        <a href="Side_characters.html">Âòîðîñòåïåííûå ïåðñîíàæè</a>
-        <a href="Series.html">Ñåðèè</a>
-        <a href="Music.html">Ìóçûêà</a>
-        <a href="MainGames.html">Èãðû</a>
-        <a href="Comp.html">Âûñòàâêà</a>
-        <a href="Hystory.html">Èñòîðèÿ</a>
-        <a href="Actors.html">Àêòåðû</a>
-        <a href="Smi.html">ÑÌÈ</a>
+        <a href="index.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Side_characters.html">Второстепенные персонажи</a>
+        <a href="Series.html">Серии</a>
+        <a href="Music.html">Музыка</a>
+        <a href="MainGames.html">Игры</a>
+        <a href="Comp.html">Выставка</a>
+        <a href="Hystory.html">История</a>
+        <a href="Actors.html">Актеры</a>
+        <a href="Smi.html">СМИ</a>
     </div>
 
     
         <div class="content">
             <div class="audio-player">
-                <h2>Ïëýéëèñò</h2>
+                <h2>Плэйлист</h2>
                 <div class="playlist-container">
                     <div class="imgBx">
                         <img id="albumArt" src="" alt="">
@@ -191,48 +191,48 @@
     <script>
         const playlist = [
             {
-                title: 'Îìñê ôîíê',
+                title: 'Омск фонк',
                 src: 'audio/Omsk_phonk.mp3',
                 albumArt: 'images/Phonk.jpg'
             },
 
             {
-                title: 'Äèñêî',
+                title: 'Диско',
                 src: 'audio/Disco.mp3',
                 albumArt: 'images/Disco.jpg'
             },
 
             {
-                title: 'Îò âèíòà!',
+                title: 'От винта!',
                 src: 'audio/Otvinta.mp3',
                 albumArt: 'images/Otvinta.jpg'
             },
 
             {
-                title: 'Ìàðàôîíåö',
+                title: 'Марафонец',
                 src: 'audio/Marafon.mp3',
                 albumArt: 'images/Marafon.jpg'
             },
-            // Äîáàâüòå áîëüøå ïåñåí ïðè íåîáõîäèìîñòè
+            // Добавьте больше песен при необходимости
         ];
 
         const audio = document.getElementById('audio');
         const albumArt = document.getElementById('albumArt');
         const playlistElement = document.getElementById('playlist');
 
-        // Ñîçäàíèå ïëåéëèñòà
+        // Создание плейлиста
         playlist.forEach((song, index) => {
             const li = document.createElement('li');
             const button = document.createElement('button');
-            const img = document.createElement('img'); // Ñîçäàíèå ýëåìåíòà èçîáðàæåíèÿ
+            const img = document.createElement('img'); // Создание элемента изображения
 
             button.textContent = song.title;
-            img.src = song.albumArt; // Óñòàíîâêà ïóòè ê èçîáðàæåíèþ
-            img.width = 20; // Çàäàíèå øèðèíû èçîáðàæåíèÿ
-            img.height = 20; // Çàäàíèå âûñîòû èçîáðàæåíèÿ
-            img.style.marginRight = '10px'; // Çàäàíèå îòñòóïà ñïðàâà îò èçîáðàæåíèÿ
+            img.src = song.albumArt; // Установка пути к изображению
+            img.width = 20; // Задание ширины изображения
+            img.height = 20; // Задание высоты изображения
+            img.style.marginRight = '10px'; // Задание отступа справа от изображения
             img.style.marginLeft = 'auto';
-            img.style.borderRadius = '30%'; // Äëÿ êðóãëîãî èçîáðàæåíèÿ
+            img.style.borderRadius = '30%'; // Для круглого изображения
 
             button.addEventListener('click', () => {
                 audio.src = song.src;
@@ -240,7 +240,7 @@
                 audio.play();
             });
 
-            button.appendChild(img); // Äîáàâëåíèå èçîáðàæåíèÿ âíóòðü êíîïêè
+            button.appendChild(img); // Добавление изображения внутрь кнопки
             li.appendChild(button);
             playlistElement.appendChild(li);
         });
@@ -250,9 +250,9 @@
 
     <footer>
         <center>
-            <p>Àäðåñ: óë. Ïðèìåðíàÿ, 123</p>
+            <p>Адрес: ул. Примерная, 123</p>
             <p>Email: example@example.com</p>
-            <p>Òåëåôîí: +1 (234) 567-890</p>
+            <p>Телефон: +1 (234) 567-890</p>
         </center>
     </footer>
 
